@@ -6,10 +6,10 @@ Members:
     - Huy Huynh
     - Fletcher Rosenberg
     - Zinilson Valente
-Page: 
-Purpose: 
+Page: culture.html
+Purpose: Company Culture page
 Created: 02/04/2026
-Last Edited: 
+Last Edited: 08/04/2026
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -17,10 +17,118 @@ Last Edited:
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta name="keywords"
-        content="">
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Group: , Page: ">
     <link href="styles/style.css" rel="stylesheet">
-    <title>BLANK</title>
+    <title>Culture</title>
 </head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="culture.html">Culture</a></li>
+        </ul>
+    </nav>
+    <!-- Navigation Bar END -->
+    <!-- Core Company Message -->
+    <h1>Our Culture</h1>
+    <p style="font-size: x-large;">
+        <strong>As a new start-up in the Education Technology world, we pride ourselves on
+            our <em>fast-paced</em> work environment that rewards our employees for their <em>innovation</em> and going
+            <em>above-and-beyond</em> in their work.</strong>
+    </p>
+    <!-- Company Values Content-->
+    <h2>Our Values</h2>
+    <ul>
+        <li>RESPECT</li>
+        <li>INTEGRITY</li>
+        <li>HONESTY</li>
+        <li>DIVERSITY</li>
+        <li>SUSTAINABILITY</li>
+        <li>COLLABORATION</li>
+    </ul>
+    <!-- Company Work Style Content -->
+    <h2>Our Work</h2>
+    <p>
+        We take pride in on our innovative, hybrid work style. Our office space is easily accessed by public transport,
+        as well as underground parking for those who prefer to drive, and is well equipped for everything our employees
+        need to fuel their work. Bi-weekly lunches, mandatory team events, and of course unlimited Melbourne quality
+        coffee on-site, give our teams everything they need to succeed.</p>
+    <!-- Company Weekly Events Table -->
+    <p>Check out the weekly calendar below for all our in-office weekly events!</p>
+    <table>
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday/Sunday</th>
+        </tr>
+        <tr>
+            <td>Cafe Breakfast (only in stand-ups)</td>
+            <td>&#x1F32E; Taco Tuesday Lunch &#x1F32E;</td>
+            <td>Office Bingo</td>
+            <td>&#x1F355; Pizza Party Lunch &#x1F355;</td>
+            <td>After Work Pub Night</td>
+            <td>Monthly Team Building Exercise</td>
+        </tr>
+    </table>
+    <!-- Company Benefits Content -->
+    <h2>Our Benefits</h2>
+    <p>
+        We offer our employees opportunities to get generous seasonal bonuses, alongside our base pay guarantee plus
+        commission all employees qualify for just for working with us. Alongside the endless opportunities for employees
+        to maximise their pay, we also offer the potential for uncapped bonus paid leave*.</p>
+    <small>* bonus leave available up to the discretion of management.</small>
+    <!-- Company Testimonials Content -->
+    <h2>Our Testimonials</h2>
+    <p>Hear directly from some of our employees on what it's like working with us!</p>
+    <div class="grid-container">
+        <div class="testimonal1"></div>
+        <div class="testimonal2"></div>
+        <div class="testimonal3"></div>
+    </div>
+    <!-- Testimonial Form -->
+    <p>Want to see your testimonial here? Tell us what it was like working as part of our team below!</p>
+    <form>
+        <!-- TODO
+        Check for Employee ID pattern
+        Check that how ive set up the name fields actually works
+        Check if i can leave the form as unusable for the bit
+        Limit the amount of text in the comments section
+        -->
+        <label for="employeeName">Your Name:</label><br>
+        <input type="text" id="employeeName" name="employeeName" value="First Name Here"><br>
+        <input type="text" id="employeeName" name="employeeName" value="Last Name Here"><br>
+        <label for="employeeID">Your ID:</label><br>
+        <input type="text" id="employeeID" name="employeeID" value="Employee ID Here"><br>
+        <label for="wstatus">Work Status:</label>
+        <select name="wstatus" id="wstatus">
+            <option value="current">Current Employee</option>
+            <option value="past">Past Employee</option>
+        </select><br>
+        <label for="comments">Feedback:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="50">
+        Enter your feedback here...
+        </textarea><br>
+        <input type="button" onclick="alert('Invalid Submission')" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <hr>
+    <!-- Acknoledgement of Country Content -->
+    <h2>Our Acknowledgement:</h2>
+    <p>
+        Edutainment is comprised of people from a vast amount of Traditional Aboriginal land of the Kulin nation, from
+        Wathaurong all the way down to Boonwurrung. We respectfully acknowledge the Traditional Owners of the lands we
+        work on, as well as all lands throughout Australia, and pay our respect to Elders past and present.<br>
+        Sovereignty has never been ceded.</p>
+</body>
+
+</html>
