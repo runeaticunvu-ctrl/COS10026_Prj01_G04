@@ -18,12 +18,81 @@ description:
 /* CSS DIRECTORY (as we make the individual css please format your css into groups with comments indicating the start of a group ex GLOBAL css (nav bar, elements shared website wide at the top of the page), HEADER (header elements), CLASSES (usage of .class elements) etc for readability and ease of intergrating into a single css.
     1. GLOBAL
     2. 
-    3. 
+    3. CLASSES
     4. 
 */
 
 /*** 1. GLOBAL ***/
+.topnav {
+  background-color: #274156;
+  overflow: hidden;
+}
 
+.topnav a {
+  float: left;
+  position-area: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
 
+.topnav a:hover {
+  border-bottom: 3px solid #4A8FE7;
+}
+
+.topnav a.active {
+  border-bottom: 5px solid #4A8FE7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+th, td {
+    border: 1px solid black; 
+    padding: 10px;
+    text-align: center;
+}
 
 /*** END GLOBAL ***/
+
+/*** 3. CLASSES ***/
+
+.grid-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-container div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.grid2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+/*** END CLASSES ***/

@@ -10,6 +10,7 @@ Page: culture.html
 Purpose: Company Culture page
 Created: 02/04/2026
 Last Edited: 08/04/2026
+Last Edited by: Rune
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -26,19 +27,17 @@ Last Edited: 08/04/2026
 
 <body>
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="culture.html">Culture</a></li>
-        </ul>
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="apply.html">Apply</a>
+        <a href="about.html">About</a>
+        <a href="culture.html" class="active">Culture</a>
     </nav>
     <!-- Navigation Bar END -->
     <!-- Core Company Message -->
     <h1>Our Culture</h1>
-    <p style="font-size: x-large;">
+    <p>
         <strong>As a new start-up in the Education Technology world, we pride ourselves on
             our <em>fast-paced</em> work environment that rewards our employees for their <em>innovation</em> and going
             <em>above-and-beyond</em> in their work.</strong>
@@ -62,7 +61,7 @@ Last Edited: 08/04/2026
         coffee on-site, give our teams everything they need to succeed.</p>
     <!-- Company Weekly Events Table -->
     <p>Check out the weekly calendar below for all our in-office weekly events!</p>
-    <table>
+    <table style="border-collapse: collapse; background-color: #B3D2B2;">
         <tr>
             <th>Monday</th>
             <th>Tuesday</th>
@@ -88,12 +87,50 @@ Last Edited: 08/04/2026
         to maximise their pay, we also offer the potential for uncapped bonus paid leave*.</p>
     <small>* bonus leave available up to the discretion of management.</small>
     <!-- Company Testimonials Content -->
+    <!-- TODO
+        This is where the grid layout will be
+        each div needs to contain:
+            * stock image
+            * position
+            * short, vague quote on working at the company
+     -->
     <h2>Our Testimonials</h2>
     <p>Hear directly from some of our employees on what it's like working with us!</p>
     <div class="grid-container">
-        <div class="testimonal1"></div>
-        <div class="testimonal2"></div>
-        <div class="testimonal3"></div>
+        <div class="grid1">
+            <img src="images\gettyimages-163907119-612x612.jpg"
+                alt="A man at his desk with a computer. The man, desk and computer are covered in yellow sticky notes.">
+        </div>
+        <div class="grid2">
+            <p>Name: Nick</p>
+            <p>Position: CEO</p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+        <div class="grid3">
+            <p>Name: Fletcher</p>
+            <p>Position: </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+        <div class="grid4">
+            <p>Name: Huy</p>
+            <p>Position: </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+        <div class="grid5">
+            <p>Name: Omer</p>
+            <p>Position: </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+        <div class="grid6">
+            <p>Name: Rune</p>
+            <p>Position: </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+        <div class="grid7">
+            <p>Name: Zinilson</p>
+            <p>Position: </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
     </div>
     <!-- Testimonial Form -->
     <p>Want to see your testimonial here? Tell us what it was like working as part of our team below!</p>
@@ -129,6 +166,25 @@ Last Edited: 08/04/2026
         Wathaurong all the way down to Boonwurrung. We respectfully acknowledge the Traditional Owners of the lands we
         work on, as well as all lands throughout Australia, and pay our respect to Elders past and present.<br>
         Sovereignty has never been ceded.</p>
-</body>
+<footer>
+    <nav class="bottomnav">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="apply.html">Apply</a>
+        <a href="about.html">About</a>
+        <a href="culture.html">Culture</a>
+    </nav>
+
+</footer>
+
+    </body>
+<!-- 
+Image credits:
+tutornick.png : Nick (Tutor of COS10026 Thursday Class) Discord Account
+All images used are under the Australian Fair Dealing law, for private study usage. This webpage and it's content are not for publishing or copying onto a public facing platform of any type.
+No AI/LLM has been used to generate any content/images/logos/slogans on this page.
+All webpage content has been written by: Rune Finlayson
+All images/logos have been sourced by: Rune Finlayson 
+-->
 
 </html>
