@@ -24,6 +24,60 @@ description:
 
 /*** 1. GLOBAL ***/
 
+@import url('https://fonts.googleapis.com');
 
+* {
+    background-color: rgb(252, 224, 222);
+}
+
+img {
+    display: flex;
+    margin: auto;
+    width: 220px;
+    height: 250px;
+    padding-bottom: 10px ;
+}
+
+
+h1 {
+    font-family: 'Montserrat', ;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+nav a {
+    background-color: white;
+    border: black solid 1px;
+    padding: 1%;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: brown ;
+}
+
+nav a:hover {
+    display: inline-block;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+    color: blue;
+}
+
+h2 {
+    font-family: "Oswald", sans-serif; 
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: "Roboto", sans-serif, "Cascadia Mono", monospace ;
+    font-size: 15px;
+}
 
 /*** END GLOBAL ***/
