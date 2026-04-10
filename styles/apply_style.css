@@ -26,21 +26,90 @@ description:
 
 @import url('https://fonts.googleapis.com');
 
-* {
-    background-color: rgb(252, 224, 222);
+body {
+    min-block-size: 100vb;
+    font-family: "Google Sans", monospace;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: rgb(152, 59, 5);
+    background-image: linear-gradient(to right, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195))
 }
 
-img {
+ img {
     display: flex;
     margin: auto;
-    width: 220px;
-    height: 250px;
+    width: 150px;
+    height: 170px;
     padding-bottom: 10px ;
 }
 
+.header {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    padding-block: 2.5rem;
+    padding-inline: 3.5rem;
+    margin: 1rem;
+    background-color: rgba(239, 139, 17, 0.297);
+    border-radius: 1rem;
+}
 
-h1 {
-    font-family: 'Montserrat', ;
+.header__logo {
+    margin: 0;
+}
+
+
+.header__ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 2rem
+}
+
+.header__li {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    background:rgba(152, 59, 5, 0.303);
+    align-items: center;
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+}
+
+.header__li:hover {
+
+    cursor: pointer;
+    font-style: bold;
+    color:rgb(42, 38, 38)
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        padding-block: 3rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header__ul {
+        margin-block-end: 0;
+        margin-block-start: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* h1 {
+    font-family: "Cascadia Mono", monospace;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: "Cascadia Mono", monospace;
     display: flex;
     justify-content: center;
 }
@@ -55,7 +124,7 @@ nav a {
     background-color: white;
     border: black solid 1px;
     padding: 1%;
-    font-family: sans-serif;
+    font-family: "Cascadia Mono", monospace;
     font-weight: bold;
     text-decoration: none;
     color: brown ;
@@ -69,15 +138,10 @@ nav a:hover {
     color: blue;
 }
 
-h2 {
-    font-family: "Oswald", sans-serif; 
-    display: flex;
-    justify-content: center;
-}
 
 body {
-    font-family: "Roboto", sans-serif, "Cascadia Mono", monospace ;
+    font-family: "Cascadia Mono", monospace ;
     font-size: 15px;
-}
+} */ 
 
 /*** END GLOBAL ***/

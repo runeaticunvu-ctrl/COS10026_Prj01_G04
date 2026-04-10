@@ -12,6 +12,7 @@ Created: 02/04/2026
 Last Edited: 
 -->
 <!DOCTYPE html>
+
 <head>
     <html lang="en">
     <meta charset="UTF-8">
@@ -22,33 +23,75 @@ Last Edited:
     <link href="styles/apply_style.css" rel="stylesheet">
     <title>Join Our Team - Edutainment</title>
 </head>
+
 <body>
-        <header>
-            <p>
-                <a href="https://swinburne.edu.au">
-                    <img src="images/images.png" alt="swinburne.edu.au">
-                </a>
-            </p>
-            <!--NAVIGATION BAR TO POINT TO HOME AND OTHER PAGES-->
-            <nav>
-                <a href="#Home">Home</a>
-                <a href="#About Us">About Us</a>
-                <a href="#Apply Now">Apply Now</a>
-                <a href="#Culture">Culture</a>
-                <a href="#Jobs">Jobs</a>
-            </nav>
-            
-            <h1>
-                Join our Team to reshape how people learn
-            </h1>
+    <!-- <header class="header">
+        <p>
+            <a class="header_logo" href="https://swinburne.edu.au">
+                <img src="images/images.png" alt="swinburne.edu.au">
+            </a>
+        </p> -->
+    <!--NAVIGATION BAR TO POINT TO HOME AND OTHER PAGES-->
+    <!-- <nav>
+            <a href="#Home">Home</a>
+            <a href="#About Us">About Us</a>
+            <a href="#Apply Now">Apply Now</a>
+            <a href="#Culture">Culture</a>
+            <a href="#Jobs">Jobs</a>
+        </nav>
 
-            <h2>
-                Fill in your details below:
-            </h2>
+        <h1>
+            Join our Team to reshape how people learn
+        </h1>
 
-            <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-                                
-            </form>
-        </header>
-        
+        <h2>
+            Fill in your details below:
+        </h2>
+
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+
+        </form>
+    </header> -->
+
+    <header class="header">
+        <h1 class="header__logo"><a href=""><img src="images/images.png" alt="edutainment logo"></a></h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="index.html" class="header__li">Home</a></li>
+                <li><a href="about.html" class="header__li">About</a></li>
+                <li><a href="culture.html" class="header__li">Culture</a></li>
+                <li><a href="jobs.html" class="header__li">Vacancies</a></li>
+                <li><a href="apply.html" class="header__li">Apply</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p id="form_intro">Please fill in your details below:</p>
+
+    <form id="application_form" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+    <!-- Job Reference -->
+     <div class="form-group" id="group-jobreference">
+        <label for="jobref">Job Reference No:</label>
+        <input type="text" id="jobref" name="jobref" pattern="[a-zA-Z0-9]{5}" title = "Maximum Length: 5 characters" maxlength="5">
+     </div>
+     <div class="form-group" id="group-jobreference">
+        <label for="firstname">Please enter your First Name: </label>
+        <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z0-9]{1,20}" maxlength="20">
+     </div>
+     <div class="form-group" id="group-jobreference">
+        <label for="lastname">Job Reference No:</label>
+        <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z0-9]{5}" maxlength="5">
+     </div>
+     <div class="form-group" id="group-jobreference">
+        <label for="jobref">Job Reference No:</label>
+        <input type="text" id="jobref" name="jobref" pattern="[a-zA-Z0-9]{5}" maxlength="5">
+     </div>
+
+
+
+
+
+
+     
+    </form>
 </body>
