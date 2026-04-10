@@ -26,32 +26,39 @@ description:
 * {
     font-family: calibri, sans-serif;
     font-size: 20px;
-   
-    
-    
 }
 /*** 1. END GLOBAL ***/
 
 /*** 2. HEADER ***/
+
 header h1 {
-    border: 5px solid rgb(17, 49, 38);
-    background-color: aquamarine;
+    border: 5px solid rgb(101, 77, 207);
+    background-color: rgb(204, 141, 69);
     font-size: 8em;
     text-align: center;
-    
+    width: 50%;
 }
 /*** 2. END HEADER ***/
 
 /*** 3. NAV ***/
 nav {
-    display: inline-block;
-    border: 5px solid  rgb(17, 49, 38);
-    background-color: aquamarine;
-    padding: 0.2em 0.6em;
+    display: flex;
+    justify-content: space-evenly;
+    border: 5px solid  rgb(204, 141, 69);
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 2em 0.6em;
     text-decoration: none;
     text-align: center;
     width: 100%;
     
+}
+
+nav a {
+    border: 5px solid rgb(204, 141, 69);
+    padding: 1em 3em;
+    border-radius: 5px;
+    background-color: rgb(175, 175, 175);
 }
 /*** 3. END NAV ***/
 
@@ -69,7 +76,7 @@ aside {
 
 /*** 5. Paragraphs ***/
 p {
-    color: grey;
+    background-color:rgb(36, 100, 78)
 }
 /*** 5. END Paragraphs ***/
 
@@ -83,3 +90,26 @@ p {
 }
 /*** 6. END Job Content Class ***/
 
+ h2, h3, h4, ul, li, ol {
+    background-color: rgb(36, 100, 78);
+ }
+
+
+ .text {
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+ }
+
+button {
+    border: 5px yellow;
+}
+
+.topelements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-evenly;
+  align-items: center;
+  align-content: normal;
+}
