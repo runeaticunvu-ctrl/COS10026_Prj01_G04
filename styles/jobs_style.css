@@ -1,0 +1,85 @@
+/* 
+Please rename this file to {yourpage}_style.css while we work on individual html pages and css requirements.
+*/
+
+/*
+filename: 
+authors: 
+    - Omer Ather Ather
+    - Rune Finlayson
+    - Huy Huynh
+    - Fletcher Rosenberg
+    - Zinilson Valente
+created: 02/04/2026
+last modified: 10/04/2026
+description: 
+*/
+
+/* CSS DIRECTORY (as we make the individual css please format your css into groups with comments indicating the start of a group ex GLOBAL css (nav bar, elements shared website wide at the top of the page), HEADER (header elements), CLASSES (usage of .class elements) etc for readability and ease of intergrating into a single css.
+    1. GLOBAL
+    2. HEADER
+    3. NAV
+    4. 
+*/
+
+/*** 1. GLOBAL ***/
+* {
+    font-family: calibri, sans-serif;
+    font-size: 20px;
+   
+    
+    
+}
+/*** 1. END GLOBAL ***/
+
+/*** 2. HEADER ***/
+header h1 {
+    border: 5px solid rgb(17, 49, 38);
+    background-color: aquamarine;
+    font-size: 8em;
+    text-align: center;
+    
+}
+/*** 2. END HEADER ***/
+
+/*** 3. NAV ***/
+nav {
+    display: inline-block;
+    border: 5px solid  rgb(17, 49, 38);
+    background-color: aquamarine;
+    padding: 0.2em 0.6em;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    
+}
+/*** 3. END NAV ***/
+
+/*** 4. ASIDE ***/
+aside {
+    border: 5px solid rgb(17, 49, 38);
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+    width: 30%;
+    background-color: aquamarine;
+    float: right;
+}
+/*** END ASIDE ***/
+
+/*** 5. Paragraphs ***/
+p {
+    color: grey;
+}
+/*** 5. END Paragraphs ***/
+
+/*** 6. Job Content Class ***/
+.jobcontent {
+    border: 5px solid; 
+    margin: 1em;
+    padding: 1em;
+    background-color: rgb(36, 100, 78);
+    
+}
+/*** 6. END Job Content Class ***/
+
