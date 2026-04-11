@@ -33,6 +33,7 @@ description:
 
 header h1 {
     border: 5px solid rgb(101, 77, 207);
+    border-radius: 15px;
     background-color: rgb(204, 141, 69);
     font-size: 8em;
     text-align: center;
@@ -72,11 +73,15 @@ aside {
     background-color: aquamarine;
     float: right;
 }
+
+aside p {
+    background-color: inherit;
+}
 /*** END ASIDE ***/
 
-/*** 5. Paragraphs ***/
+/*** 5. Paragraphs (exclusivly for Reporting Lines) ***/
 p {
-    background-color:rgb(36, 100, 78)
+    background-color:rgb(112, 112, 112) 
 }
 /*** 5. END Paragraphs ***/
 
@@ -85,13 +90,13 @@ p {
     border: 5px solid; 
     margin: 1em;
     padding: 1em;
-    background-color: rgb(36, 100, 78);
+    background-color: rgb(112, 112, 112);
     
 }
 /*** 6. END Job Content Class ***/
 
  h2, h3, h4, ul, li, ol {
-    background-color: rgb(36, 100, 78);
+    background-color: rgb(112, 112, 112);
  }
 
 
@@ -112,4 +117,8 @@ button {
   justify-content:space-evenly;
   align-items: center;
   align-content: normal;
+}
+/***Keeps Job Summary text background the same as the Aside background ***/
+aside em, strong {
+    background-color: aquamarine;
 }
