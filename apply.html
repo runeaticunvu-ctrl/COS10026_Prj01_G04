@@ -12,9 +12,9 @@ Created: 02/04/2026
 Last Edited: 
 -->
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <html lang="en">
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -65,33 +65,119 @@ Last Edited:
             </ul>
         </nav>
     </header>
+    <main>
+        <p id="form_intro">Please fill in your details below:</p>
 
-    <p id="form_intro">Please fill in your details below:</p>
+        <form id="application_form" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+            <!-- Job Reference -->
+            <div class="form-group" id="group-jobreference">
+                <label for="jobref">Job Reference No:</label>
+                <input type="text" id="jobref" name="jobref" pattern="[a-zA-Z0-9]{1,5}"
+                    title="Maximum Length: 5 characters" maxlength="5" required>
+            </div>
+            <!-- First Name -->
+            <div class="form-group" id="group-firstname">
+                <label for="firstname">Please enter your First Name: </label>
+                <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]{1,20}" maxlength="20" required>
+            </div>
+            <!-- Last Name -->
+            <div class="form-group" id="group-lastname">
+                <label for="lastname">Please enter your last name:</label>
+                <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]{1-20}" maxlength="20" required>
+            </div>
+            <!-- Date of Birth -->
+            <div class="form-group" id="group-dob">
+                <label for="dob">Please enter your date of birth:</label>
+                <input type="text" placeholder="DD/MM/YYYY" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" required>
+            </div>
+            <!-- Gender -->
+            <div class="form-group" id="group-gender">
+                <fieldset id="fieldset-gender">
+                    <legend>Please select your gender:</legend>
+                    <label>
+                        <input type="radio" name="gender" id="Female" value="Female" required>
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" id="Male" value="Male" required>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" id="rathernotsay" value="Rather Not Say" required>
+                        Rather Not Say
+                    </label>
+                </fieldset>
+            </div>
+            <!-- Street Address -->
+            <div class="form-group" id="group-street">
+                <label for="street">Street Address</label>
+                <input type="text" id="street" name="street" maxlength="40" required>
+            </div>
+            <!-- Suburb/Town -->
+            <div class="form-group" id="group-suburb">
+                <label for="suburb">Suburb / Town</label>
+                <input type="text" id="suburb" name="suburb" maxlength="40" required>
+            </div>
 
-    <form id="application_form" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-    <!-- Job Reference -->
-     <div class="form-group" id="group-jobreference">
-        <label for="jobref">Job Reference No:</label>
-        <input type="text" id="jobref" name="jobref" pattern="[a-zA-Z0-9]{5}" title = "Maximum Length: 5 characters" maxlength="5">
-     </div>
-     <div class="form-group" id="group-jobreference">
-        <label for="firstname">Please enter your First Name: </label>
-        <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z0-9]{1,20}" maxlength="20">
-     </div>
-     <div class="form-group" id="group-jobreference">
-        <label for="lastname">Job Reference No:</label>
-        <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z0-9]{5}" maxlength="5">
-     </div>
-     <div class="form-group" id="group-jobreference">
-        <label for="jobref">Job Reference No:</label>
-        <input type="text" id="jobref" name="jobref" pattern="[a-zA-Z0-9]{5}" maxlength="5">
-     </div>
+            <!-- State -->
+            <div class="form-group" id="group-state">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="">-- Select --</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+            </div>
 
+            <!-- Postcode -->
+            <div class="form-group" id="group-postcode">
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode" pattern="\d{4}" maxlength="4" required>
+            </div>
 
+            <!-- Email -->
+            <div class="form-group" id="group-email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
 
+            <!-- Phone -->
+            <div class="form-group" id="group-phone">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" pattern="\d{8,12}">
+            </div>
 
+            <!-- Skills -->
+            <div class="form-group" id="group-skills">
+                <fieldset id="fieldset-skills">
+                    <legend>Skill List</legend>
+                    <label><input type="checkbox" name="skills" value="html"> HTML</label>
+                    <label><input type="checkbox" name="skills" value="css"> CSS</label>
+                    <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+                    <label><input type="checkbox" name="skills" value="php"> PHP</label>
+                    <label><input type="checkbox" name="skills" value="python"> Python</label>
+                </fieldset>
+            </div>
 
+            <!-- Other Skills -->
+            <div class="form-group" id="group-otherskills">
+                <label for="otherskills">Other Skills</label>
+                <textarea id="otherskills" name="otherskills" rows="4" cols="50"></textarea>
+            </div>
 
-     
-    </form>
+            <!-- Buttons -->
+            <div id="form-buttons">
+                <input type="submit" id="btn-submit" value="Submit">
+                <input type="reset" id="btn-reset" value="Reset">
+            </div>
+        </form>
+    </main>
 </body>
+
+</html>

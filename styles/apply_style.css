@@ -24,23 +24,27 @@ description:
 
 /*** 1. GLOBAL ***/
 
-@import url('https://fonts.googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    min-block-size: 100vb;
-    font-family: "Google Sans", monospace;
-    font-size: 1.1rem;
+    /* min-height: 100vh;*/
     line-height: 1;
     color: rgb(152, 59, 5);
     background-image: linear-gradient(to right, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195))
 }
 
- img {
-    display: flex;
+img {
     margin: auto;
-    width: 150px;
-    height: 170px;
-    padding-bottom: 10px ;
+    width: 140px;
+    height: auto;
+    padding-bottom: 10px;
 }
 
 .header {
@@ -49,13 +53,21 @@ body {
     font-weight: bold;
     justify-content: space-between;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 0.5rem;
     row-gap: 1rem;
-    padding-block: 2.5rem;
+    padding-block: 1.5rem;
     padding-inline: 3.5rem;
-    margin: 1rem;
+    margin: 0.5rem;
     background-color: rgba(239, 139, 17, 0.297);
     border-radius: 1rem;
+}
+
+#form_intro {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 1rem;
 }
 
 .header__logo {
@@ -76,7 +88,7 @@ body {
     padding-block: 0.5rem;
     border-radius: 1rem;
     color: rgb(255, 255, 255);
-    background:rgba(152, 59, 5, 0.303);
+    background: rgba(255, 85, 12, 0.303);
     align-items: center;
     text-decoration: none;
     transition: ease-in-out 0.5s;
@@ -85,9 +97,90 @@ body {
 .header__li:hover {
 
     cursor: pointer;
-    font-style: bold;
-    color:rgb(42, 38, 38)
+    font-weight: bold;
+    color: rgb(42, 38, 38)
 }
+
+fieldset {
+    border: none;
+}
+
+form {
+    /* position: relative; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* font-size: 1.1rem; */
+    font-weight: bold;
+    /* row-gap: 1rem; */
+    padding-block: 2.5rem;
+    padding-inline: 4.5rem;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: rgba(255, 200, 112, 0.23);
+    border-radius: 1rem;
+}
+
+
+.form-group {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    border: 2px solid #ccc;
+    /*border for the text box*/
+    border-radius: 6px;
+    /*corner radius for the text box*/
+    padding: 8px 12px;
+    /*padding for the text inside the text box*/
+    font-size: 15px;
+    /*input for the text*/
+    outline: none;
+    transition: border 0.4s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #e07b4f;
+    /* đổi màu viền khi click vào — dùng màu cam theo theme của bạn */
+}
+
+#btn-submit {
+    height: 10px;
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    background: rgba(152, 59, 5, 0.552);
+}
+
+#btn-reset {
+    height: 10px;
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    background: rgba(255, 11, 11, 0.552);
+}
+
 
 @media screen and (max-width: 800px) {
     .header {
@@ -95,6 +188,7 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
     .header__ul {
         margin-block-end: 0;
         margin-block-start: 1rem;
@@ -102,6 +196,7 @@ body {
         justify-content: center;
     }
 }
+
 /* h1 {
     font-family: "Cascadia Mono", monospace;
     display: flex;
@@ -142,6 +237,6 @@ nav a:hover {
 body {
     font-family: "Cascadia Mono", monospace ;
     font-size: 15px;
-} */ 
+} */
 
 /*** END GLOBAL ***/
