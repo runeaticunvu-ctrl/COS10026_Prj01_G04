@@ -61,7 +61,7 @@ Last Edited by: Rune
         coffee on-site, give our teams everything they need to succeed.</p>
     <!-- Company Weekly Events Table -->
     <p>Check out the weekly calendar below for all our in-office weekly events!</p>
-    <table style="border-collapse: collapse; background-color: #B3D2B2;">
+    <table style="border: 4px solid #7D4F50; border-radius: 25px;">
         <tr>
             <th>Monday</th>
             <th>Tuesday</th>
@@ -72,20 +72,26 @@ Last Edited by: Rune
         </tr>
         <tr>
             <td>Cafe Breakfast (only in stand-ups)</td>
-            <td>&#127790; Taco Tuesday Lunch &#127790;</td>
+            <td>&#127790; <br> Taco Tuesday Lunch <br> &#127790;</td>
             <td>Office Bingo</td>
-            <td>&#127829; Pizza Party Lunch &#127829;</td>
+            <td>&#127829; <br> Pizza Party Lunch <br> &#127829;</td>
             <td>After Work Pub Night</td>
             <td>Monthly Team Building Exercise</td>
         </tr>
     </table>
     <!-- Company Benefits Content -->
-    <h2>Our Benefits</h2>
-    <p>
-        We offer our employees opportunities to get generous seasonal bonuses, alongside our base pay guarantee plus
-        commission all employees qualify for just for working with us. Alongside the endless opportunities for employees
-        to maximise their pay, we also offer the potential for uncapped bonus paid leave*.</p>
-    <small>* bonus leave available up to the discretion of management.</small>
+    <div class="benefits">
+        <h2>Our Benefits</h2>
+        <p>
+            We offer our employees opportunities to get generous seasonal bonuses, alongside our base pay guarantee plus
+            commission all employees qualify for just for working with us. Alongside the endless opportunities for
+            employees
+            to maximise their pay, we also offer the potential for uncapped bonus paid leave*. <br>
+            <small>* bonus leave available up to the discretion of management.</small>
+        </p>
+        <img src="/images/2026-04-14_11-35.png"
+            alt="picture of a small, one car lane street with a paid carpark entrance. The footpath in front of the entrance is regularly used, and there is visible rubbish.">
+    </div>
     <!-- Company Testimonials Content -->
     <!-- TODO
         This is where the grid layout will be
@@ -104,7 +110,9 @@ Last Edited by: Rune
             <img src="images/tutornick.png" alt="A man smiling at the camera alongside his dog.">
             <p>Name: Nick</p>
             <p>Position: CEO</p>
-            <p><q>We see ourselves as a family, and as a family we're never going to give you up. We're never going to let you down. We wont run around and desert you. We promise not to make you cry, say goodbye or even tell a lie and hurt you.</q></p>
+            <p><q>We see ourselves as a family, and as a family we're never going to give you up. We're never going to
+                    let you down. We wont run around and desert you. We promise not to make you cry, say goodbye or even
+                    tell a lie and hurt you.</q></p>
         </div>
         <div class="grid3">
             <p>Name: Fletcher</p>
@@ -137,52 +145,56 @@ Last Edited by: Rune
         </div>
     </div>
     <!-- Testimonial Form -->
-     <div id="testimonialForm">
-    <p>Want to see your testimonial here? Tell us what it was like working as part of our team below!</p>
-    <form>
-        <!-- TODO
+    <div id="testimonialForm">
+        <p>Want to see your testimonial here? Tell us what it was like working as part of our team below!</p>
+        <form>
+            <!-- TODO
         Check for Employee ID pattern
         Check that how ive set up the name fields actually works
         Check if i can leave the form as unusable for the bit
         Limit the amount of text in the comments section
         -->
-        <label for="employeeName">Your Name:</label><br>
-        <input type="text" id="employeeName" name="employeeName" value="First Name Here"><br>
-        <label for="employeeID">Your ID:</label><br>
-        <input type="text" id="employeeID" name="employeeID" value="Employee ID Here"><br>
-        <label for="wstatus">Work Status:</label>
-        <select name="wstatus" id="wstatus">
-            <option value="current">Current Employee</option>
-            <option value="past">Past Employee</option>
-        </select><br>
-        <label for="comments">Feedback:</label><br>
-        <textarea id="comments" name="comments" rows="5" cols="50">
+            <label for="employeeName">Your Name:</label><br>
+            <input type="text" id="employeeName" name="employeeName" value="First Name Here"><br>
+            <label for="employeeID">Your ID:</label><br>
+            <input type="text" id="employeeID" name="employeeID" value="Employee ID Here"><br>
+            <label for="wstatus">Work Status:</label>
+            <select name="wstatus" id="wstatus">
+                <option value="current">Current Employee</option>
+                <option value="past">Past Employee</option>
+            </select><br>
+            <label for="comments">Feedback:</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="50">
         Enter your feedback here...
         </textarea><br>
-        <input type="button" onclick="alert('Invalid Submission')" value="Submit">
-        <input type="reset" value="Reset">
-    </form>
+            <input class="formButton" type="button" onclick="alert('Invalid Submission')" value="Submit">
+            <input class="formButton" type="reset" value="Reset">
+        </form>
     </div>
     <hr>
     <!-- Acknoledgement of Country Content -->
-    <h2>Our Acknowledgement:</h2>
-    <p>
-        Edutainment is comprised of people from a vast amount of Traditional Aboriginal land of the Kulin nation, from
-        Wathaurong all the way down to Boonwurrung. We respectfully acknowledge the Traditional Owners of the lands we
-        work on, as well as all lands throughout Australia, and pay our respect to Elders past and present.<br>
-        Sovereignty has never been ceded.</p>
-<footer>
-    <nav class="bottomnav">
-        <a href="index.html">Home</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="apply.html">Apply</a>
-        <a href="about.html">About</a>
-        <a href="culture.html">Culture</a>
-    </nav>
+    <div id="acknowledgement">
+        <h2>Our Acknowledgement:</h2>
+        <p>
+            Edutainment is comprised of people from a vast amount of Traditional Aboriginal land of the Kulin nation,
+            from
+            Wathaurong all the way down to Boonwurrung. We respectfully acknowledge the Traditional Owners of the lands
+            we
+            work on, as well as all lands throughout Australia, and pay our respect to Elders past and present.<br>
+            Sovereignty has never been ceded. <br> <br>
+            <a href="https://ulurustatement.org/the-statement/view-the-statement/">Learn more about the Uluru Statement from the Heart here.</a></p>
+    </div>
+    <footer>
+        <nav class="bottomnav">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="apply.html">Apply</a>
+            <a href="about.html">About</a>
+            <a href="culture.html">Culture</a>
+        </nav>
+    </footer>
 
-</footer>
-
-    </body>
+</body>
 <!-- 
 Image credits:
 tutornick.png : Nick (Tutor of COS10026 Thursday Class) Discord Account

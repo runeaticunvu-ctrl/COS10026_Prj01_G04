@@ -12,7 +12,7 @@ authors:
     - Zinilson Valente
 created: 02/04/2026
 last modified: 09/04/2026
-description: 
+description: current working styles.css for culture.html
 */
 
 /* CSS DIRECTORY (as we make the individual css please format your css into groups with comments indicating the start of a group ex GLOBAL css (nav bar, elements shared website wide at the top of the page), HEADER (header elements), CLASSES (usage of .class elements) etc for readability and ease of intergrating into a single css.
@@ -24,32 +24,52 @@ description:
 
 /*** 1. GLOBAL ***/
 
-h1, h2 {
+* {
+    font-family: 'Verdana', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right bottom, rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195));
+}
+
+h1,
+h2 {
     text-align: center;
+    background: linear-gradient(to right, rgb(192, 132, 252), rgb(250, 204, 21));
+    border-radius: 25px;
+    width: 100%;
+    
 }
 
 .topnav {
-  background-color: #274156;
-  overflow: hidden;
+    background: linear-gradient(to right, rgb(134, 239, 172), rgb(192, 132, 252));
+    overflow: hidden;
+    width: 100%;
 }
+/* TODO
+BottomNav colour background: linear-gradient(to left, rgb(134, 239, 172), rgb(192, 132, 252))
 
+*/
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  border-bottom: 3px solid transparent;
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-weight: bolder;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid #4A8FE7;
+    border-bottom: 3px solid rgb(192, 132, 252);
 }
 
 .topnav a.active {
-  border-bottom: 5px solid #4A8FE7;
+    border-bottom: 5px solid rgb(192, 132, 252);
 }
 
 p {
@@ -60,36 +80,77 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 /* TODO
-    Make this specific to the culture.html page so it doesn't over
+    Make this specific to the culture.html page so it doesn't overright other pages
 */
-ul{
+ul {
     text-align: center;
-    list-style-type:none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-th, td {
-    border: 1px solid black; 
+table {
+    margin: 0 auto;
+    background: #EBA6A9;
+}
+
+th,
+td {
+    border-right: 3px solid #7D4F50;
+    border-left: 3px solid #7D4F50;
+    border-radius: 25px;
     padding: 10px;
     text-align: center;
 }
 
 form {
-    border: 1px solid #274156;
+    border-radius: 25px;
+    border: 4px solid #7D4F50;
+    padding: 2%;
     display: inline-block;
     text-align: center;
+    background: #EBA6A9;
 }
+
+/* TODO Section END */
 
 #testimonialForm {
     display: grid;
     place-items: center;
 }
 
+#testimonialForm label {
+    font-weight: bolder;
+}
+
+#acknowledgement {
+    padding-bottom: 5%;
+}
+ #acknowledgement p {
+    font-size: larger;
+ }
+
 /*** END GLOBAL ***/
 
 /*** 3. CLASSES ***/
+
+
+.benefits p {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    margin-left: 5%;
+}
+
+.benefits img {
+    display: inline-block;
+    margin-left: 15%;
+    max-width: 30%;
+    border-radius: 25px;
+    border: 4px solid #7D4F50;
+}
 
 .grid-container {
     display: grid;
@@ -99,15 +160,18 @@ form {
 }
 
 .grid-container div {
-    background-color: #f1f1f1;
-    border: 1px solid black;
+    background: radial-gradient(at 100% 0%, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138));
+    border-radius: 25px;
+    border: 4px solid #7D4F50;
     padding: 10px;
     text-align: center;
+    overflow: hidden;
 }
 
 .grid1 {
     grid-row-start: 1;
     grid-row-end: 3;
+    padding: 0 !important;
 }
 
 .grid1 img {
@@ -125,6 +189,8 @@ form {
 .grid2 img {
     max-width: 30%;
     float: left;
+    border-radius: 25px;
+    border: 4px solid #7D4F50;
 }
 
 
@@ -132,6 +198,7 @@ form {
     grid-row-start: 2;
     grid-row-end: 5;
     grid-column-start: 3;
+    padding: 0 !important;
 }
 
 .grid4 img {
