@@ -39,8 +39,7 @@ h2 {
     text-align: center;
     background: linear-gradient(to right, rgb(192, 132, 252), rgb(250, 204, 21));
     border-radius: 25px;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .topnav {
@@ -52,7 +51,7 @@ h2 {
 BottomNav colour background: linear-gradient(to left, rgb(134, 239, 172), rgb(192, 132, 252))
 
 */
-.topnav a {
+.topnav a, .bottomnav a {
     float: left;
     display: block;
     color: #000000;
@@ -72,6 +71,20 @@ BottomNav colour background: linear-gradient(to left, rgb(134, 239, 172), rgb(19
     border-bottom: 5px solid rgb(192, 132, 252);
 }
 
+.bottomnav {
+    background: linear-gradient(to left, rgb(134, 239, 172), rgb(192, 132, 252));
+    overflow: hidden;
+    width: 100%;
+}
+
+.bottomnav a:hover {
+    border-top: 3px solid rgb(134, 239, 172);
+}
+
+.bottomnav a.active {
+    border-top: 5px solid rgb(134, 239, 172);
+}
+
 p {
     text-align: center;
 }
@@ -84,20 +97,20 @@ img {
 /* TODO
     Make this specific to the culture.html page so it doesn't overright other pages
 */
-ul {
+#cultureUL {
     text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-table {
+#cultureTable {
     margin: 0 auto;
     background: #EBA6A9;
 }
 
-th,
-td {
+#cultureTable th,
+#cultureTable td {
     border-right: 3px solid #7D4F50;
     border-left: 3px solid #7D4F50;
     border-radius: 25px;
@@ -123,6 +136,18 @@ form {
 
 #testimonialForm label {
     font-weight: bolder;
+}
+
+#testimonialForm p {
+    padding: 1%;
+    border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #7D4F50, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
 }
 
 #acknowledgement {
