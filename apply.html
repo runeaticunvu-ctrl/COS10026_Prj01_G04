@@ -9,7 +9,7 @@ Members:
 Page: Apply
 Purpose: For visitors to apply for vacancies
 Created: 02/04/2026
-Last Edited: 
+Last Edited: 14/04/2026
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -25,33 +25,6 @@ Last Edited:
 </head>
 
 <body>
-    <!-- <header class="header">
-        <p>
-            <a class="header_logo" href="https://swinburne.edu.au">
-                <img src="images/images.png" alt="swinburne.edu.au">
-            </a>
-        </p> -->
-    <!--NAVIGATION BAR TO POINT TO HOME AND OTHER PAGES-->
-    <!-- <nav>
-            <a href="#Home">Home</a>
-            <a href="#About Us">About Us</a>
-            <a href="#Apply Now">Apply Now</a>
-            <a href="#Culture">Culture</a>
-            <a href="#Jobs">Jobs</a>
-        </nav>
-
-        <h1>
-            Join our Team to reshape how people learn
-        </h1>
-
-        <h2>
-            Fill in your details below:
-        </h2>
-
-        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-
-        </form>
-    </header> -->
 
     <header class="header">
         <h1 class="header__logo"><a href=""><img src="images/images.png" alt="edutainment logo"></a></h1>
@@ -75,21 +48,29 @@ Last Edited:
                 <input type="text" id="jobref" name="jobref" pattern="[a-zA-Z0-9]{1,5}"
                     title="Maximum Length: 5 characters" maxlength="5" required>
             </div>
+
+
             <!-- First Name -->
             <div class="form-group" id="group-firstname">
                 <label for="firstname">Please enter your First Name: </label>
                 <input type="text" id="firstname" name="firstname" pattern="[a-zA-Z]{1,20}" maxlength="20" required>
             </div>
+
+
             <!-- Last Name -->
             <div class="form-group" id="group-lastname">
                 <label for="lastname">Please enter your last name:</label>
-                <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]{1-20}" maxlength="20" required>
+                <input type="text" id="lastname" name="lastname" pattern="[a-zA-Z]{1,20}" maxlength="20" required>
             </div>
+
+
             <!-- Date of Birth -->
             <div class="form-group" id="group-dob">
                 <label for="dob">Please enter your date of birth:</label>
                 <input type="text" placeholder="DD/MM/YYYY" id="dob" name="dob" pattern="\d{2}/\d{2}/\d{4}" required>
             </div>
+
+
             <!-- Gender -->
             <div class="form-group" id="group-gender">
                 <fieldset id="fieldset-gender">
@@ -99,30 +80,36 @@ Last Edited:
                         Female
                     </label>
                     <label>
-                        <input type="radio" name="gender" id="Male" value="Male" required>
+                        <input type="radio" name="gender" id="Male" value="Male">
                         Male
                     </label>
                     <label>
-                        <input type="radio" name="gender" id="rathernotsay" value="Rather Not Say" required>
+                        <input type="radio" name="gender" id="rathernotsay" value="Rather Not Say">
                         Rather Not Say
                     </label>
                 </fieldset>
             </div>
+
+
             <!-- Street Address -->
             <div class="form-group" id="group-street">
                 <label for="street">Street Address</label>
                 <input type="text" id="street" name="street" maxlength="40" required>
             </div>
+
+
             <!-- Suburb/Town -->
             <div class="form-group" id="group-suburb">
                 <label for="suburb">Suburb / Town</label>
                 <input type="text" id="suburb" name="suburb" maxlength="40" required>
             </div>
 
+
+
             <!-- State -->
             <div class="form-group" id="group-state">
                 <label for="state">State</label>
-                <select id="state" name="state">
+                <select id="state" name="state" required>
                     <option value="">-- Select --</option>
                     <option value="VIC">VIC</option>
                     <option value="NSW">NSW</option>
@@ -135,23 +122,28 @@ Last Edited:
                 </select>
             </div>
 
+
+
             <!-- Postcode -->
             <div class="form-group" id="group-postcode">
                 <label for="postcode">Postcode</label>
                 <input type="text" id="postcode" name="postcode" pattern="\d{4}" maxlength="4" required>
             </div>
 
+
             <!-- Email -->
             <div class="form-group" id="group-email">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
             </div>
+
 
             <!-- Phone -->
             <div class="form-group" id="group-phone">
                 <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="phone" pattern="\d{8,12}">
+                <input type="text" id="phone" name="phone" pattern="\d{8,12}" required>
             </div>
+
 
             <!-- Skills -->
             <div class="form-group" id="group-skills">
@@ -165,11 +157,13 @@ Last Edited:
                 </fieldset>
             </div>
 
+
             <!-- Other Skills -->
             <div class="form-group" id="group-otherskills">
                 <label for="otherskills">Other Skills</label>
                 <textarea id="otherskills" name="otherskills" rows="4" cols="50"></textarea>
             </div>
+
 
             <!-- Buttons -->
             <div id="form-buttons">
@@ -181,3 +175,5 @@ Last Edited:
 </body>
 
 </html>
+
+<!--website used for making the nav bar: https://www.youtube.com/watch?v=abzMSYsnXV4-->
