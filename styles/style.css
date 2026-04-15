@@ -1,29 +1,105 @@
-/* 
-Please rename this file to {yourpage}_style.css while we work on individual html pages and css requirements.
-*/
+/* ===============================
+   Basic Page Styling
+   =============================== */
 
-/*
-filename: 
-authors: 
-    - Omer Ather Ather
-    - Rune Finlayson
-    - Huy Huynh
-    - Fletcher Rosenberg
-    - Zinilson Valente
-created: 02/04/2026
-last modified: 02/04/2026
-description: 
-*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
 
-/* CSS DIRECTORY (as we make the individual css please format your css into groups with comments indicating the start of a group ex GLOBAL css (nav bar, elements shared website wide at the top of the page), HEADER (header elements), CLASSES (usage of .class elements) etc for readability and ease of intergrating into a single css.
-    1. GLOBAL
-    2. 
-    3. 
-    4. 
-*/
+/* Header */
+header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
-/*** 1. GLOBAL ***/
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
 
+nav li {
+    display: inline;
+}
 
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
 
-/*** END GLOBAL ***/
+nav a:hover {
+    background-color: #555;
+}
+
+/* Sections */
+section {
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+/* ===============================
+   Student ID Styling
+   =============================== */
+
+.student-id {
+    color: #d35400;
+    font-weight: bold;
+}
+
+/* ===============================
+   Figure Styling
+   =============================== */
+
+figure {
+    border: 2px solid #4a90e2;
+    padding: 10px;
+    width: 320px;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* ===============================
+   Table Styling
+   =============================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #4a90e2;
+    color: white;
+    
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+/* Hover effect (requirement) */
+tr:hover {
+    background-color: #d6eaf8;
+}
+
+/* ===============================
+   Footer
+   =============================== */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
