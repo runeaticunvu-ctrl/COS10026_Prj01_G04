@@ -71,11 +71,6 @@ img {
     padding-bottom: 2rem;
 }
 
-.header__logo {
-    margin: 0;
-}
-
-
 .header__ul {
     margin: 0;
     padding: 0;
@@ -148,7 +143,6 @@ input[type="email"]:focus,
 textarea:focus,
 select:focus {
     border-color: #e07b4f;
-    /* đổi màu viền khi click vào — dùng màu cam theo theme của bạn */
 }
 
 
@@ -157,6 +151,8 @@ select:focus {
 #fieldset-skills {
     display: flex;
     /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px;
     padding-top: 8px;
 }
@@ -178,7 +174,6 @@ select:focus {
 
 
 #btn-submit {
-    height: 10px;
     height: 55px;
     width: 100%;
     color: #fff;
@@ -193,7 +188,6 @@ select:focus {
 }
 
 #btn-reset {
-    height: 10px;
     height: 55px;
     width: 100%;
     color: #fff;
