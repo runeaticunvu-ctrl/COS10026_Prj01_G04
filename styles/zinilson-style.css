@@ -86,7 +86,7 @@ img{
 }
 
 .intro .container{
-    background: url('../images/edtech-background.png') no-repeat;
+    background: url('..styles/images/edtech-background.png') no-repeat;
     background-size: contain; 
     background-position: center bottom;
     height: 620px; 
