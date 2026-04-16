@@ -20,7 +20,10 @@ description:
     2. HEADER
     3. NAV
     4. ASIDE
-    5. 
+    5. Paragraphs
+    6. Job Content Class
+    7. Headers and List Elements 
+    8. Body Text Class
 */
 
 /*** 1. GLOBAL ***/
@@ -85,7 +88,7 @@ aside {
     border-radius: 14px;
     margin: 1em;
     padding: 1em;
-    width: 30%;
+    width: 25%;
     background-color: aquamarine;
     float: right;
 }
@@ -127,7 +130,7 @@ ol {
 
 /*** END Headers and List Elements ***/
 
-/*** Body Text Class ***/
+/*** 8.  Body Text Class ***/
 .text {
     background-color: inherit;
     color: inherit;
