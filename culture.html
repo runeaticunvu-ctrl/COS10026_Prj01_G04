@@ -6,10 +6,11 @@ Members:
     - Huy Huynh
     - Fletcher Rosenberg
     - Zinilson Valente
-Page: 
-Purpose: 
+Page: culture.html
+Purpose: Company Culture page
 Created: 02/04/2026
-Last Edited: 
+Last Edited: 08/04/2026
+Last Edited by: Rune
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -17,10 +18,188 @@ Last Edited:
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta name="keywords"
-        content="">
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Group: , Page: ">
     <link href="styles/style.css" rel="stylesheet">
-    <title>BLANK</title>
+    <title>Culture</title>
 </head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="apply.html">Apply</a>
+        <a href="about.html">About</a>
+        <a href="culture.html" class="active">Culture</a>
+    </nav>
+    <!-- Navigation Bar END -->
+    <!-- Core Company Message -->
+    <h1>Our Culture</h1>
+    <p>
+        <strong>As a new start-up in the Education Technology world, we pride ourselves on
+            our <em>fast-paced</em> work environment that rewards our employees for their <em>innovation</em> and going
+            <em>above-and-beyond</em> in their work.</strong>
+    </p>
+    <!-- Company Values Content-->
+    <h2>Our Values</h2>
+    <ul id="cultureUL">
+        <li>RESPECT</li>
+        <li>INTEGRITY</li>
+        <li>HONESTY</li>
+        <li>DIVERSITY</li>
+        <li>SUSTAINABILITY</li>
+        <li>COLLABORATION</li>
+    </ul>
+    <!-- Company Work Style Content -->
+    <h2>Our Work</h2>
+    <p>
+        We take pride in on our innovative, hybrid work style. Our office space is easily accessed by public transport,
+        as well as underground parking for those who prefer to drive, and is well equipped for everything our employees
+        need to fuel their work. Bi-weekly lunches, mandatory team events, and of course unlimited Melbourne quality
+        coffee on-site, give our teams everything they need to succeed.</p>
+    <!-- Company Weekly Events Table -->
+    <p>Check out the weekly calendar below for all our in-office weekly events!</p>
+    <table id="cultureTable" style="border: 4px solid #7D4F50; border-radius: 25px;">
+        <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday/Sunday</th>
+        </tr>
+        <tr>
+            <td>Cafe Breakfast (only in stand-ups)</td>
+            <td>&#127790; <br> Taco Tuesday Lunch <br> &#127790;</td>
+            <td>Office Bingo</td>
+            <td>&#127829; <br> Pizza Party Lunch <br> &#127829;</td>
+            <td>After Work Pub Night</td>
+            <td>Monthly Team Building Exercise</td>
+        </tr>
+    </table>
+    <!-- Company Benefits Content -->
+    <div class="benefits">
+        <h2>Our Benefits</h2>
+        <p>
+            We offer our employees opportunities to get generous seasonal bonuses, alongside our base pay guarantee plus
+            commission all employees qualify for just for working with us. Alongside the endless opportunities for
+            employees
+            to maximise their pay, we also offer the potential for uncapped bonus paid leave*. <br>
+            <small>* bonus leave available up to the discretion of management.</small>
+        </p>
+        <img src="/images/2026-04-14_11-35.png"
+            alt="picture of a small, one car lane street with a paid carpark entrance. The footpath in front of the entrance is regularly used, and there is visible rubbish.">
+    </div>
+    <!-- Company Testimonials Content -->
+    <!-- TODO
+        This is where the grid layout will be
+        each div needs to contain:
+            * position
+            * short, vague quote on working at the company
+     -->
+    <h2>Our Testimonials</h2>
+    <p>Hear directly from some of our employees on what it's like working with us!</p>
+    <div class="grid-container">
+        <div class="grid1">
+            <img src="images/gettyimages-163907119-612x612.jpg"
+                alt="A man at his desk with a computer. The man, desk and computer are covered in yellow sticky notes.">
+        </div>
+        <div class="grid2">
+            <img src="images/tutornick.png" alt="A man smiling at the camera alongside his dog.">
+            <p><strong>Name:</strong> Nick</p>
+            <p><strong>Position:</strong> CEO</p>
+            <p><q>We see ourselves as a family, and as a family we're never going to give you up. We're never going to
+                    let you down. We wont run around and desert you. We promise not to make you cry, say goodbye or even
+                    tell a lie and hurt you.</q></p>
+        </div>
+        <div class="grid3">
+            <p><strong>Name:</strong> Fletcher</p>
+            <p><strong>Position:</strong> </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+        <div class="grid4">
+            <img src="images/gettyimages-166231642-612x612.jpg"
+                alt="A man being pushed on a desk chair in an office by his coworker, having a fantastic time.">
+        </div>
+        <div class="grid5">
+            <p><strong>Name:</strong> Huy</p>
+            <p><strong>Position:</strong> </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+        <div class="grid6">
+            <p><strong>Name:</strong> Omer</p>
+            <p><strong>Position:</strong> </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+        <div class="grid7">
+            <p><strong>Name:</strong> Rune</p>
+            <p><strong>Position:</strong> </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+        <div class="grid8">
+            <p><strong>Name:</strong> Zinilson</p>
+            <p><strong>Position:</strong> </p>
+            <p><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</q></p>
+        </div>
+    </div>
+    <!-- Testimonial Form -->
+    <div id="testimonialForm">
+        <p>Want to see your testimonial here? Tell us what it was like working as part of our team below!</p>
+        <!-- This form is designed to be non-functional -->
+        <form>
+            <label for="employeeName">Your Name:</label><br>
+            <input type="text" id="employeeName" name="employeeName" value="First Name Here"><br>
+            <label for="employeeID">Your ID:</label><br>
+            <input type="text" id="employeeID" name="employeeID" value="Employee ID Here"><br>
+            <label for="wstatus">Work Status:</label>
+            <select name="wstatus" id="wstatus">
+                <option value="current">Current Employee</option>
+                <option value="past">Past Employee</option>
+            </select><br>
+            <label for="comments">Feedback:</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="50">
+        Enter your feedback here...
+        </textarea><br>
+            <!-- Input Submit button specifically made to alert that the form cannot be submitted -->
+            <input class="formButton" type="button" onclick="alert('Invalid Submission')" value="Submit">
+            <input class="formButton" type="reset" value="Reset">
+        </form>
+    </div>
+    <hr>
+    <!-- Acknoledgement of Country Content -->
+    <div id="acknowledgement">
+        <h2>Our Acknowledgement:</h2>
+        <p>
+            Edutainment is comprised of people from a vast amount of Traditional Aboriginal land of the Kulin nation,
+            from
+            Wathaurong all the way down to Boonwurrung. We respectfully acknowledge the Traditional Owners of the lands
+            we
+            work on, as well as all lands throughout Australia, and pay our respect to Elders past and present.<br>
+            Sovereignty has never been ceded. <br> <br>
+            <a href="https://ulurustatement.org/the-statement/view-the-statement/">Learn more about the Uluru Statement
+                from the Heart here.</a>
+        </p>
+    </div>
+    <footer>
+        <nav class="bottomnav">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="apply.html">Apply</a>
+            <a href="about.html">About</a>
+            <a href="culture.html" class="active">Culture</a>
+        </nav>
+    </footer>
+
+</body>
+<!-- 
+Image credits:
+tutornick.png : Nick (Tutor of COS10026 Thursday Class) Discord Account
+All images used are under the Australian Fair Dealing law, for private study usage. This webpage and it's content are not for publishing or copying onto a public facing platform of any type.
+No AI/LLM has been used to generate any content/images/slogans on this page.
+All webpage content has been written by: Rune Finlayson
+All images have been sourced by: Rune Finlayson 
+-->
+
+</html>
