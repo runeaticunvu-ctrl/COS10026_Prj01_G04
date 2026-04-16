@@ -20,29 +20,59 @@ Last Edited: 16/04/2026
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Group: , Page: ">
+    <!-- Link for the fonts used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Link for social media icons in the footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to styles css file -->
+    <!-- <link href="styles/zinilson-style.css" rel="stylesheet"> -->
     <link href="styles/style.css" rel="stylesheet">
-    <title>Jobs</title>
-
-    <!-- Reference to external CSS files -->
-    <link rel="stylesheet" href="styles/jobs_style.css">
+    <title>Edutainment Technology</title>
     <style>
-        * {
-            background-color: rgb(201, 199, 199);
-        }
+        /* Temp embedded Style sheet */
     </style>
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="topnav">
-        <a href="index.html" class="text">Home</a>
-        <a href="jobs.html" class="text">Jobs</a>
-        <a href="apply.html" class="text">Apply</a>
-        <a href="about.html" class="text">About</a>
-        <a href="culture.html" class="text">Culture</a>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="ed-tech-logo" src="images/EdTech_Logo.png" alt="logo" />
+                </a>
+            </div>
+            <!-- Navbar Menu -->
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <h3>EdTech</h3>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About </a>
+                    </li>
+                    <li>
+                        <a href="apply.html">Apply</a>
+                    </li>
+                    <li>
+                        <a href="jobs.html">Jobs</a>
+                    </li>
+                    <li>
+                        <a href="culture.html">Jobs</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END NavBar Menu  -->
+        </div>
     </nav>
-    <!-- Navigation Bar END -->
-
+    <!-- END Navigation Bar -->
     <!-- Header-->
     <div class="topelements">
         <header>
@@ -172,7 +202,7 @@ Last Edited: 16/04/2026
                 <li>Join us for a conversation about your vision and our mission</li>
             </ol>
 
-            <buttons>Apply</buttons>
+            <button>Apply</button>
         </section>
         <!-- Job 2 END-->
     </article>
@@ -201,18 +231,63 @@ Requirements (To do list for myself)
 -   responsive layouts (in styles.css) 
 -   follow accessibility practices (in styles.css)
 -->
-    <!-- Bottom Navigation Bar -->
-    <nav class="topnav">
-        <a href="index.html" class="text">Home</a>
-        <a href="jobs.html" class="text">Jobs</a>
-        <a href="apply.html" class="text">Apply</a>
-        <a href="about.html" class="text">About</a>
-        <a href="culture.html" class="text">Culture</a>
-    </nav>
-    <!-- Bottom Navigation Bar END -->
-
-    <footer>
-        <p style="background-color: rgb(201, 199, 199);">Edutainment Technolgies 2026 &copy;. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="footer bg-grey">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html">
+                        <img src="images/EdTech_Logo.png" alt="logo" />
+                    </a>
+                    <div class="card">
+                        <h4>Subscribe to our Newsletter</h4>
+                        <p class="text-sm">
+                            Subscribe now to stay updated on the lastest news regarding all
+                            things tech.
+                        </p>
+                        <form>
+                            <input type="email" id="email" placeholder="Enter your email" />
+                            <button type="submit" class="btn btn-primary btn-block btn-subscribe">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Process</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li>
+                            <a href="https://github.com/huy-huynh18/COS10026_Prj01_G04.git" target="_blank">Our
+                                Github</a>
+                        </li>
+                        <li>
+                            <a href="https://runeatic.atlassian.net/jira/for-you?continue=https%3A%2F%2Fruneatic.atlassian.net%2Fwelcome%2Fsoftware%3FprojectId%3D10000"
+                                target="_blank">Jira Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <a href="#">edtech@gmail.com</a>
+                        </li>
+                        <li>0439 029 845</li>
+                        <li>123 Hawthorn St, Victoria</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-
 </body>
+
+</html>
