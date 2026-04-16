@@ -19,7 +19,8 @@ description:
     1. GLOBAL
     2. HEADER
     3. NAV
-    4. 
+    4. ASIDE
+    5. 
 */
 
 /*** 1. GLOBAL ***/
@@ -27,9 +28,12 @@ description:
     font-family: calibri, sans-serif;
     font-size: 20px;
 }
+
 /*** 1. END GLOBAL ***/
 
 /*** 2. HEADER ***/
+
+
 
 header h1 {
     border: 5px solid rgb(101, 77, 207);
@@ -37,22 +41,33 @@ header h1 {
     background-color: rgb(204, 141, 69);
     font-size: 8em;
     text-align: center;
+    align-items: center;
     width: 50%;
 }
+
+.topelements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
 /*** 2. END HEADER ***/
 
 /*** 3. NAV ***/
 nav {
     display: flex;
     justify-content: space-evenly;
-    border: 5px solid  rgb(204, 141, 69);
+    border: 5px solid rgb(204, 141, 69);
     background-color: rgb(48, 48, 48);
     color: white;
     padding: 2em 0.6em;
     text-decoration: none;
     text-align: center;
     width: 100%;
-    
+
 }
 
 nav a {
@@ -61,6 +76,7 @@ nav a {
     border-radius: 5px;
     background-color: rgb(175, 175, 175);
 }
+
 /*** 3. END NAV ***/
 
 /*** 4. ASIDE ***/
@@ -77,48 +93,57 @@ aside {
 aside p {
     background-color: inherit;
 }
+
 /*** END ASIDE ***/
 
 /*** 5. Paragraphs (exclusivly for Reporting Lines) ***/
 p {
-    background-color:rgb(112, 112, 112) 
+    background-color: rgb(112, 112, 112)
 }
+
 /*** 5. END Paragraphs ***/
 
 /*** 6. Job Content Class ***/
 .jobcontent {
-    border: 5px solid; 
+    border: 5px solid;
     margin: 1em;
     padding: 1em;
     background-color: rgb(112, 112, 112);
-    
+
 }
+
 /*** 6. END Job Content Class ***/
 
- h2, h3, h4, ul, li, ol {
+/*** 7. Headers and List Elements ***/
+
+h2,
+h3,
+h4,
+ul,
+li,
+ol {
     background-color: rgb(112, 112, 112);
- }
+}
 
+/*** END Headers and List Elements ***/
 
- .text {
+/*** Body Text Class ***/
+.text {
     background-color: inherit;
     color: inherit;
     text-decoration: none;
- }
-
-button {
-    border: 5px yellow;
 }
 
-.topelements {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content:space-evenly;
-  align-items: center;
-  align-content: normal;
-}
+/*** END Body Text Class ***/
+
+
+
+
+
+
+
 /***Keeps Job Summary text background the same as the Aside background ***/
-aside em, strong {
+aside em,
+strong {
     background-color: aquamarine;
 }
