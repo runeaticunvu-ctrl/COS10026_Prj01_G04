@@ -57,6 +57,12 @@ img{
     max-width: 100%;
 }
 
+hr {
+    height: 5px;
+    border: none;
+    background-color: #669d1b;
+}
+
 /* Navigation Bar */
 .navbar{
     background-color: #fff ;
@@ -73,7 +79,7 @@ img{
     display: flex;
 }
 
-.navbar h3{
+.navbar p{
     color: #669d1b;
     font-size: 1.5rem;
     margin-right: 550px;
@@ -452,7 +458,7 @@ input{
     margin-left: 15%;
     max-width: 30%;
     border-radius: 25px;
-    border: 4px solid #7D4F50;
+    border: 4px solid #669d1b;
 }
 
 .grid-container {
@@ -463,9 +469,9 @@ input{
 }
 
 .grid-container div {
-    background: radial-gradient(at 100% 0%, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138));
+    /* background: radial-gradient(at 100% 0%, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138)); */
     border-radius: 25px;
-    border: 4px solid #7D4F50;
+    border: 4px solid #669d1b;
     padding: 10px;
     text-align: center;
     overflow: hidden;
@@ -493,7 +499,7 @@ input{
     max-width: 30%;
     float: left;
     border-radius: 25px;
-    border: 4px solid #7D4F50;
+    border: 4px solid #669d1b;
 }
 
 
@@ -516,17 +522,26 @@ input{
     place-items: center;
 }
 
+#testimonialForm form {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1%;
+    border-radius: 25px;
+    border: 4px solid #669d1b;
+}
+
 #testimonialForm label {
     font-weight: bolder;
 }
 
 #testimonialForm p {
+    margin-top: 2%;
     padding: 1%;
     border-width: 3px;
     border-style: solid;
     border-image:
         linear-gradient(to bottom,
-            #7D4F50,
+            #669d1b,
             rgba(0, 0, 0, 0)) 1 100%;
 }
 
@@ -543,8 +558,8 @@ input{
 
 #cultureTable th,
 #cultureTable td {
-    border-right: 3px solid #7D4F50;
-    border-left: 3px solid #7D4F50;
+    border-right: 3px solid #669d1b;
+    border-left: 3px solid #669d1b;
     border-radius: 25px;
     padding: 10px;
     text-align: center;
