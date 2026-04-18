@@ -7,8 +7,8 @@ authors:
     - Fletcher Rosenberg
     - Zinilson Valente
 created: 02/04/2026
-last modified: 09/04/2026
-description: current working styles.css for culture.html
+last modified: 17/04/2026
+description: global style.css for apply.html, about.html, culture.html, index.html and jobs.html
 */
 
 /* CSS DIRECTORY (as we make the individual css please format your css into groups with comments indicating the start of a group ex GLOBAL css (nav bar, elements shared website wide at the top of the page), HEADER (header elements), CLASSES (usage of .class elements) etc for readability and ease of intergrating into a single css.
@@ -23,57 +23,63 @@ description: current working styles.css for culture.html
 
 /*** 1. GLOBAL ***/
 
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Variables */
-:root{
+:root {
     --primary-color: #669d1b;
     --light-color: #f4f4f6ee;
-    --grey-color: #808080; 
+    --grey-color: #808080;
 }
 
 /* General Settings */
-body{
+body {
     font-family: 'Poppins', sans serif;
     font-size: 16px;
     line-height: 1.5;
     background: #fff;
 }
 
-a{
+a {
     text-decoration: none;
     color: #333;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
+hr {
+    height: 5px;
+    border: none;
+    background-color: #669d1b;
+}
+
 /* Navigation Bar */
-.navbar{
-    background-color: #fff ;
+.navbar {
+    background-color: #fff;
     padding: 20px;
 }
 
-.navbar .container{
-     display: flex;
-     justify-content: space-between ;
-     align-items: center;
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar .main-menu ul{
+.navbar .main-menu ul {
     display: flex;
 }
 
-.navbar h3{
+.navbar p {
     color: #669d1b;
     font-size: 1.5rem;
     margin-right: 550px;
@@ -83,61 +89,62 @@ img{
     text-align: center;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     padding: 10px 20px;
     display: block;
     font-weight: 600;
     transition: 0.5s;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     color: var(--primary-color);
 }
 
 
-.navbar ul li:last-child a{
-    margin: left 10px;
+.navbar ul li:last-child a {
+    /* margin: left 10px; */
+    margin-left: 10px;
 }
 
-.navbar ul li a i{
-     margin-right: 5px; 
+.navbar ul li a i {
+    margin-right: 5px;
 
 }
 
 /* Footer */
 
-.footer{
+.footer {
     padding: 40px 0;
 }
 
-.footer h4{
+.footer p {
     margin-bottom: 10px;
 }
 
-.footer ul li{
+.footer ul li {
     line-height: 2.5;
 }
 
-.footer a{
-    color: #ccc; 
+.footer a {
+    color: #ccc;
 }
 
-.footer i{
+.footer i {
     font-size: 1.5rem;
     margin-right: 5px;
 }
 
-.card .btn-subscribe{
+.card .btn-subscribe {
     display: block;
     width: 100px;
-   padding-right: 83px;
-   margin-right: 100px;
-   margin-left: 100px;
-    
+    padding-right: 83px;
+    margin-right: 100px;
+    margin-left: 100px;
+
 
 }
 
-.footer-grid{
+.footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
@@ -145,40 +152,43 @@ img{
     align-items: center;
 }
 
-.footer .card{
+.footer .card {
     margin: 20px 30px 30px 0px;
 }
 
 /* BUTTONS */
 
-.btn{
+.btn {
     display: inline-block;
-     padding: 13px 20px;
-     background: var(--light-color);
-     color: #333;
-     font-weight:  600;
-     text-decoration: none;
-     border:  none;
-     border-radius: 10px;
-     cursor: pointer;
-     text-align: center;
-     transition: 0.5s;
-      
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+
 }
- 
-.btn:hover{
+
+.btn:hover {
     opacity: 0.8;
 }
-.btn-primary{
+
+.btn-primary {
     background: var(--primary-color);
     color: #fff;
 
 }
-.btn-dark{
+
+.btn-dark {
     background: var(--dark-color);
     color: #fff;
 }
-.btn-block{
+
+.btn-block {
     display: block;
     width: 20%;
     margin-left: 40%;
@@ -190,63 +200,64 @@ img{
 
 /* Text Classes */
 
-.text-xxl{
+.text-xxl {
     font-size: 3rem;
     line-height: 1.2;
-    font-weight:  600;
+    font-weight: 600;
     margin: 40px 0px 20px;
 }
 
-.text-xl{
-    font-size: 2.2rem ;
+.text-xl {
+    font-size: 2.2rem;
     line-height: 1.4;
-    font-weight:  normal;
-    margin: 40px 0px  20px;
+    font-weight: normal;
+    margin: 40px 0px 20px;
 }
-.text-lg{
+
+.text-lg {
     font-size: 1.8rem;
     line-height: 1.4;
-    font-weight:  normal;
-    margin: 30px 0px  20px;
+    font-weight: normal;
+    margin: 30px 0px 20px;
 }
 
-.text-md{
-     font-size: 1.2rem;
-     line-height: 1.4;
-     font-weight:  normal;
-     margin: 20px 0px 10px;
-} 
-
-.text-sm{
-     font-size: 0.9rem;
-     line-height: 1.4;
-     font-weight:  normal;
-     margin: 10px 0px 5px; 
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0px 10px;
 }
- 
-.text-center{
-  text-align: center;  
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0px 5px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* Background */
 
-.bg-primary{
+.bg-primary {
     background: var(--primary-color);
     color: #fff;
 }
 
-.bg-light{
+.bg-light {
     background: var(--light-color);
     color: #333;
 }
 
 
-.bg-dark{
+.bg-dark {
     background: var(--grey-color);
     color: #fff;
 }
 
-.bg-grey{
+.bg-grey {
     background: #3b3b3b;
     color: #fff;
 }
@@ -257,50 +268,50 @@ img{
 
 /* Introduction */
 
-.intro{
+.intro {
     margin-bottom: 100px;
 }
 
-.intro .container{
+.intro .container {
     background: url('..styles/images/edtech-background.png') no-repeat;
-    background-size: contain; 
+    background-size: contain;
     background-position: center bottom;
-    height: 620px; 
+    height: 620px;
 }
 
 
-.intro .intro-content{
-   padding-top: 10px;
+.intro .intro-content {
+    padding-top: 10px;
     width: 90%;
 }
 
 
-.intro .intro-text{
+.intro .intro-text {
     width: 50%;
     margin-bottom: 25px;
 }
 
 /* Marketing */
 
-.marketing{
+.marketing {
     padding: 70px 0;
 }
 
-.marketing .marketing-heading{
+.marketing .marketing-heading {
     padding: 0;
     margin-bottom: 100px;
     text-align: center;
-    
-    
+
+
 }
 
-.marketing-grid{
+.marketing-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.marketing .card p:first-child{
+.marketing .card p:first-child {
     margin-top: 30px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -308,7 +319,7 @@ img{
     text-align: center;
 }
 
-.marketing .card p:nth-child(2){
+.marketing .card p:nth-child(2) {
     margin-top: 30px;
     margin-bottom: 40px;
     text-align: center;
@@ -316,26 +327,26 @@ img{
 
 /* Results */
 
-.results-heading{
+.results-heading {
     padding: 40px 0;
     margin: 200px 0;
-} 
+}
 
-.container-results{
+.container-results {
     display: flex;
     flex-direction: row;
-    
+
 }
 
 
-.results-text{
+.results-text {
     margin: 0 30px 0 60px;
-   height: 50px;
-   width: 30%;
-   text-align: left;
+    height: 50px;
+    width: 30%;
+    text-align: left;
 }
 
-.btn-learn-more{
+.btn-learn-more {
     display: block;
     margin-top: 15px;
     width: 50%;
@@ -351,84 +362,87 @@ img{
     border-collapse: collapse;
 }
 
-.results-table td, .results-table th {
+.results-table td,
+.results-table th {
     border: 1.5px solid #333;
     padding: 5px;
 }
 
-.results .results-subheading{
+.results .results-subheading {
     margin: 50px 0;
 }
 
-.results-table-row.before td:last-child{
+.results-table-row.before td:last-child {
     text-align: center;
     color: red;
 }
 
-.results-table-row.after td:last-child{
+.results-table-row.after td:last-child {
     text-align: center;
     color: green;
 }
 
 
-.results .results-footer{
-    margin: 30px 0px ;
+.results .results-footer {
+    margin: 30px 0px;
 }
 
 /* Roles */
 
 
-.roles-text{
-  padding: 50px 0;
+.roles-text {
+    padding: 50px 0;
 }
 
 
 
-input{
-    width: 300px; 
+input {
+    width: 300px;
     height: 35px;
     padding: 10px;
     font-size: 1rem;
-    text-align: center;;
+    text-align: center;
+    ;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 20px auto; 
+    margin: 20px auto;
     margin-bottom: 30px;
     display: block;
 }
 
-.btn-roles{
+.btn-roles {
     display: block;
     width: 20%;
     margin-left: 40%;
     width: 50px;
 }
 
-.edtech-slogan{
+.edtech-slogan {
     color: var(--primary-color);
     font-size: 2.5rem;
     line-height: 1.2;
-    font-weight:  600;
+    font-weight: 600;
     padding: 70px 0 80px 0;
 }
 
 /* Utility Classes */
 
-.container{
+.container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 15px;
 }
-.container-sm{
+
+.container-sm {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 /* CARD */
- 
-.card{
-    background: #fff;  
+
+.card {
+    background: #fff;
     color: #333;
     border-radius: 10px;
     padding: 20px;
@@ -452,7 +466,7 @@ input{
     margin-left: 15%;
     max-width: 30%;
     border-radius: 25px;
-    border: 4px solid #7D4F50;
+    border: 4px solid #669d1b;
 }
 
 .grid-container {
@@ -463,9 +477,9 @@ input{
 }
 
 .grid-container div {
-    background: radial-gradient(at 100% 0%, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138));
+    /* background: radial-gradient(at 100% 0%, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138)); */
     border-radius: 25px;
-    border: 4px solid #7D4F50;
+    border: 4px solid #669d1b;
     padding: 10px;
     text-align: center;
     overflow: hidden;
@@ -493,7 +507,7 @@ input{
     max-width: 30%;
     float: left;
     border-radius: 25px;
-    border: 4px solid #7D4F50;
+    border: 4px solid #669d1b;
 }
 
 
@@ -516,17 +530,26 @@ input{
     place-items: center;
 }
 
+#testimonialForm form {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1%;
+    border-radius: 25px;
+    border: 4px solid #669d1b;
+}
+
 #testimonialForm label {
     font-weight: bolder;
 }
 
 #testimonialForm p {
+    margin-top: 2%;
     padding: 1%;
     border-width: 3px;
     border-style: solid;
     border-image:
         linear-gradient(to bottom,
-            #7D4F50,
+            #669d1b,
             rgba(0, 0, 0, 0)) 1 100%;
 }
 
@@ -543,8 +566,8 @@ input{
 
 #cultureTable th,
 #cultureTable td {
-    border-right: 3px solid #7D4F50;
-    border-left: 3px solid #7D4F50;
+    border-right: 3px solid #669d1b;
+    border-left: 3px solid #669d1b;
     border-radius: 25px;
     padding: 10px;
     text-align: center;
@@ -783,5 +806,109 @@ footer {
 
 /*** 7. JOBS LAYOUT ***/
 
+.jobTitle {
+    border: 3px solid #669d1b;
+    background-color: #3b3b3b;
+}
 
+
+.jobSumaside {
+    border: 3px solid #669d1b;
+    border-radius: 25px;
+    margin: 2em;
+    padding: 1em;
+    width: 25%;
+    float: right;
+}
+
+.jobSumimg {
+    border: 3px solid #669d1b;
+    border-radius: 25px;
+    height: auto;
+    width:auto;
+}
+
+.jobSumtxt {
+    padding: 2em;
+    border: 3px solid #669d1b;
+    border-radius: 25px;
+}
+
+.jobGeneraltxt {
+    color: black 
+}
+.jobGeneraltxt h3 h4  {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.jobGeneraltxt ul {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0px 5px;
+    text-align: left;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.jobGeneralbox {
+    background-color: #ffff;
+    border: 3px solid #669d1b;
+    border-radius: 25px;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+.job-grid-container {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    overflow: hidden;
+
+    
+}
+
+.job-grid1
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.job-grid2
+{
+    grid-row-start: 2;
+    grid-row-end: 2; 
+}
+
+.job-grid3
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.job-grid4
+{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+}
+.job-grid5
+{
+    grid-row-start: 2;
+    grid-row-end: 2; 
+
+}
+.job-grid6
+{
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column: 7; 
+    align-self: right;
+}
+    
 /*** 7. JOBS LAYOUT END***/
