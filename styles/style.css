@@ -595,5 +595,48 @@ input {
 
 /*** 7. JOBS LAYOUT ***/
 
+.jobTitle {
+    border: 3px solid #669d1b;
+    border-radius: 25px;
+}
 
+
+.jobSumaside {
+    border: 3px solid #669d1b;
+    border-radius: 25px;
+    margin: 2em;
+    padding: 1em;
+    width: 25%;
+    float: right;
+}
+
+.jobSumimg {
+    border: 3px solid #669d1b;
+    border-radius: 25px;
+    height: auto;
+    width:auto;
+}
+
+.jobSumtxt {
+    padding: 2em;
+    border: 3px solid #669d1b;
+    border-radius: 25px;
+}
+
+.jobGeneraltxt h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0px 10px;
+}
+
+.jobGeneraltxt ul {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0px 5px;
+    text-align: center;
+}
+    
 /*** 7. JOBS LAYOUT END***/
