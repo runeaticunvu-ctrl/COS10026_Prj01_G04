@@ -597,7 +597,7 @@ input {
 
 .jobTitle {
     border: 3px solid #669d1b;
-    border-radius: 25px;
+    background-color: #3b3b3b;
 }
 
 
@@ -623,12 +623,12 @@ input {
     border-radius: 25px;
 }
 
-.jobGeneraltxt h3 {
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 20px 0px 10px;
+.jobGeneraltxt {
+    color: black 
+}
+.jobGeneraltxt h3 h4  {
+    text-align: left;
+    padding-left: 20px;
 }
 
 .jobGeneraltxt ul {
@@ -636,7 +636,68 @@ input {
     line-height: 1.4;
     font-weight: normal;
     margin: 10px 0px 5px;
-    text-align: center;
+    text-align: left;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.jobGeneralbox {
+    background-color: #ffff;
+    border: 3px solid #669d1b;
+    border-radius: 25px;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+.job-grid-container {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    overflow: hidden;
+
+    
+}
+
+.job-grid1
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.job-grid2
+{
+    grid-row-start: 2;
+    grid-row-end: 2; 
+}
+
+.job-grid3
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.job-grid4
+{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+}
+.job-grid5
+{
+    grid-row-start: 2;
+    grid-row-end: 2; 
+
+}
+.job-grid6
+{
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column: 7; 
+    align-self: right;
 }
     
 /*** 7. JOBS LAYOUT END***/
