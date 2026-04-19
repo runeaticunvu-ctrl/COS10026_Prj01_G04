@@ -20,13 +20,13 @@ Last Edited: 14/04/2026
     <meta name="keywords" content="apply, job, edutainment">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Group: , Page: ">
-    <link href="styles/apply_style.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
     <title>Join Our Team - Edutainment</title>
 </head>
 
-<body>
+<body id="apply_body">
 
-    <header class="header">
+    <!-- <header class="header">
         <h1 class="header__logo"><a href=""><img src="images/images.png" alt="edutainment logo"></a></h1>
         <nav class="header__nav">
             <ul class="header__ul">
@@ -37,9 +37,31 @@ Last Edited: 14/04/2026
                 <li><a href="apply.html" class="header__li">Apply</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+
+
+    <nav class="navbar navbar-apply">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/EdTech_Logo.png" alt="Edutainment Logo">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul class="header__ul">
+                    <li><p>EdTech</p></li>
+                    <li><a href="index.html" class="header__li">Index</a></li>
+                    <li><a href="about.html" class="header__li">About</a></li>
+                    <li><a href="culture.html" class="header__li">Culture</a></li>
+                    <li><a href="jobs.html" class="header__li">Jobs</a></li>
+                    <li><a href="apply.html" class="header__li">Apply</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <p id="form_intro">Please fill in your details below:</p>
+        <p id="form_intro_apply">Please fill in your details below:</p>
 
         <form id="application_form" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
             <!-- Job Reference -->
@@ -172,6 +194,67 @@ Last Edited: 14/04/2026
             </div>
         </form>
     </main>
+
+    <footer class="footer bg-grey">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html">
+                        <img src="images/EdTech_Logo.png" alt="logo">
+                    </a>
+                    <div class="card">
+                        <p>Subscribe to our Newsletter</p>
+                        <p class="text-sm">
+                            Subscribe now to stay updated on the lastest news regarding all
+                            things tech.
+                        </p>
+                        <form>
+                            <input type="email" id="email" placeholder="Enter your email">
+                            <button type="submit" class="btn btn-primary btn-block btn-subscribe">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+                <div>
+                    <p>Company</p>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Process</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Resources</p>
+                    <ul>
+                        <li><a href="#">News</a></li>
+                        <li>
+                            <a href="https://github.com/huy-huynh18/COS10026_Prj01_G04.git" target="_blank">Our
+                                Github</a>
+                        </li>
+                        <li>
+                            <a href="https://runeatic.atlassian.net/jira/for-you?continue=https%3A%2F%2Fruneatic.atlassian.net%2Fwelcome%2Fsoftware%3FprojectId%3D10000"
+                                target="_blank">Jira Projects</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Contact</p>
+                    <ul>
+                        <li><a href="#">edtech@gmail.com</a></li>
+                        <li>0439 029 845</li>
+                        <li>123 Hawthorn St</li>
+                        <li>Victoria</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
