@@ -2,7 +2,7 @@
    General Page Styling
    =============================== */
 
-body {
+.aboutbody {
     font-family: sans-serif;
     margin: 0;
     background-color: #f5f9ff;
@@ -14,21 +14,21 @@ body {
    Header
    =============================== */
 
-header {
-    background-color: #4a90e2;
-    color: #ffffff;
+ .aboutheader {
+    background-color: #f4f4f6ee;
+    color: #669d1b;
     text-align: center;
     padding: 20px;
-    border-bottom: 4px solid #2f6fb2;
+    border-bottom: 4px solid #669d1b;
 }
 
-h1 {
+.abouth1 {
     margin: 0;
 }
 
-h2 {
-    color: #2f6fb2;
-    border-bottom: 2px solid #bcd6f5;
+.abouth2 {
+    color: #669d1b;
+    border-bottom: 2px solid #669d1b;
     padding-bottom: 5px;
 }
 
@@ -36,43 +36,49 @@ h2 {
    Navigation
    =============================== */
 
-nav {
-    background-color: #333333;
+.aboutnav {
+    background-color: #ececec;
+    text-align: center;
+    padding: 10px 0 20px 0;
 }
 
-nav ul {
+.aboutnav_ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
-nav li {
+.aboutnav_li {
     display: inline-block;
+    margin: 0 10px;
 }
 
-nav a {
+.aboutnav_a {
     display: inline-block;
-    color: #ffffff;
     text-decoration: none;
-    padding: 14px 18px;
+    color: #1f1f1f;
+    background-color: #dddddd;
+    padding: 12px 24px;
+    border-radius: 18px;
+    font-weight: bold;
 }
 
-nav a:hover {
-    background-color: #4a90e2;
+.aboutnav_a:hover {
+    background-color: #6ea517;
+    color: #ffffff;
 }
 
 /* ===============================
    Main Content Sections
    =============================== */
 
-main {
+.aboutmain {
     width: 90%;
     max-width: 1000px;
     margin: 20px auto;
 }
 
-section {
+.aboutsection {
     background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
@@ -84,17 +90,17 @@ section {
    Lists and Definition List
    =============================== */
 
-ul {
+.aboutgenaral_ul {
     padding-left: 20px;
 }
 
-dt {
+.about_dt {
     font-weight: bold;
     color: #1f4e79;
     margin-top: 15px;
 }
 
-dd {
+.about_dd {
     margin-left: 20px;
     margin-bottom: 10px;
 }
@@ -118,23 +124,23 @@ dd {
    Figure Styling
    =============================== */
 
-figure {
-    border: 2px solid #4a90e2;
+.aboutfigure {
+    border: 2px solid #669d1b;
     padding: 12px;
     width: fit-content;
     margin: 20px auto;
-    background-color: #eef5ff;
+    background-color: #669d1b;
     text-align: center;
     border-radius: 8px;
 }
 
-figure img {
+.aboutfigure_img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-figcaption {
+.aboutfigcaption {
     font-style: italic;
     margin-top: 10px;
     color: #555555;
@@ -144,27 +150,27 @@ figcaption {
    Table Styling
    =============================== */
 
-table {
+.abouttable {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-caption {
+.aboutcaption {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #2f6fb2;
+    color: #669d1b;
 }
 
-th,
-td {
-    border: 1px solid #8fb6e8;
+.about_th,
+.about_td {
+    border: 1px solid #669d1b;
     padding: 10px;
     text-align: left;
 }
 
-th {
-    background-color: #4a90e2;
+.about_th {
+    background-color: #669d1b;
     color: #ffffff;
 }
 
@@ -176,37 +182,28 @@ tr:hover {
     background-color: #d6eaf8;
 }
 
-/* ===============================
-   Footer
-   =============================== */
 
-footer {
-    background-color: #333333;
-    color: #ffffff;
-    text-align: center;
-    padding: 12px;
-    margin-top: 20px;
-}
+
 
 /* ===============================
    Responsive Design
    =============================== */
 
- screen and (max-width: 600px) {
-    nav li {
+ @media screen and (max-width: 600px) {
+    .aboutnav_li {
         display: block;
         border-top: 1px solid #555555;
     }
 
-    nav a {
+    .aboutnav_a {
         display: block;
     }
 
-    main {
+    .aboutmain {
         width: 95%;
     }
 
-    figure {
+    .aboutfigure {
         width: 90%;
     }
 }

@@ -95,7 +95,7 @@ hr {
     padding: 10px 20px;
     display: block;
     font-weight: 600;
-    transition: 0.5s;
+    ansition: 0.5s;
 }
 
 .navbar ul li a:hover {
@@ -592,8 +592,215 @@ input {
 /*** 4. CULTURE LAYOUT END***/
 
 /*** 5. ABOUT LAYOUT ***/
+/* ===============================
+   General Page Styling
+   =============================== */
+
+.aboutbody {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f5f9ff;
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* ===============================
+   Header
+   =============================== */
+
+ .aboutheader {
+    background-color: #f4f4f6ee;
+    color: #669d1b;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #669d1b;
+}
+
+.abouth1 {
+    margin: 0;
+}
+
+.abouth2 {
+    color: #669d1b;
+    border-bottom: 2px solid #669d1b;
+    padding-bottom: 5px;
+}
+
+/* ===============================
+   Navigation
+   =============================== */
+
+.aboutnav {
+    background-color: #ececec;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+.aboutnav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutnav_li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.aboutnav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #1f1f1f;
+    background-color: #dddddd;
+    padding: 12px 24px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+
+.aboutnav a:hover {
+    background-color: #6ea517;
+    color: #ffffff;
+}
+
+/* ===============================
+   Main Content Sections
+   =============================== */
+
+.aboutmain {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.aboutsection {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #d6e4f5;
+    border-radius: 8px;
+}
+
+/* ===============================
+   Lists and Definition List
+   =============================== */
+
+.aboutgenaral_ul {
+    padding-left: 20px;
+}
+
+.about_dt {
+    font-weight: bold;
+    color: #1f4e79;
+    margin-top: 15px;
+}
+
+.about_dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   Student ID Styling
+   =============================== */
+
+.student-id {
+    color: #d35400;
+    font-weight: bold;
+    background-color: #fff0e1;
+    border: 1px solid #f0b27a;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+/* ===============================
+   Figure Styling
+   =============================== */
+
+.aboutfigure {
+    border: 2px solid #669d1b;
+    padding: 12px;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #669d1b;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.aboutfigure_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutfigcaption {
+    font-style: italic;
+    margin-top: 10px;
+    color: #555555;
+}
+
+/* ===============================
+   Table Styling
+   =============================== */
+
+.abouttable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.aboutcaption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #669d1b;
+}
+
+.about_th,
+.about_td {
+    border: 1px solid #669d1b;
+    padding: 10px;
+    text-align: left;
+}
+
+.about_th {
+    background-color: #669d1b;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f7fd;
+}
+
+tr:hover {
+    background-color: #d6eaf8;
+}
 
 
+
+
+/* ===============================
+   Responsive Design
+   =============================== */
+
+ @media screen and (max-width: 600px) {
+    .aboutnav_li {
+        display: block;
+        border-top: 1px solid #555555;
+    }
+
+    .aboutnav_a {
+        display: block;
+    }
+
+    .aboutmain {
+        width: 95%;
+    }
+
+    .aboutfigure {
+        width: 90%;
+    }
+}
 /*** 5. ABOUT LAYOUT END ***/
 
 /*** 6. APPLY LAYOUT ***/
