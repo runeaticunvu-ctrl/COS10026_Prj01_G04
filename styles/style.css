@@ -95,7 +95,7 @@ hr {
     padding: 10px 20px;
     display: block;
     font-weight: 600;
-    ansition: 0.5s;
+    /* ansition: 0.5s; */
 }
 
 .navbar ul li a:hover {
@@ -197,7 +197,10 @@ hr {
     margin-left: 40%;
 }
 
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
     font-family: inherit;
 }
 
@@ -574,11 +577,15 @@ input {
 
 #cultureTable th,
 #cultureTable td {
-    border-right: 3px solid #669d1b;
-    border-left: 3px solid #669d1b;
-    border-radius: 25px;
     padding: 10px;
     text-align: center;
+    border-top: solid 2px rgb(1, 83, 7);
+    ;
+    border-right: solid 2px rgb(1, 83, 7);
+}
+
+#cultureTable tr {
+    color: rgb(1, 83, 7);
 }
 
 #acknowledgement {
@@ -608,7 +615,7 @@ input {
    Header
    =============================== */
 
- .aboutheader {
+.aboutheader {
     background-color: #f4f4f6ee;
     color: #669d1b;
     text-align: center;
@@ -629,7 +636,7 @@ input {
 /* ===============================
    Navigation
    =============================== */
-   
+
 .aboutnav {
     background-color: #ececec;
     text-align: center;
@@ -783,7 +790,7 @@ tr:hover {
    Responsive Design
    =============================== */
 
- @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .aboutnav_li {
         display: block;
         border-top: 1px solid #555555;
@@ -801,6 +808,7 @@ tr:hover {
         width: 90%;
     }
 }
+
 /*** 5. ABOUT LAYOUT END ***/
 
 /*** 6. APPLY LAYOUT ***/
@@ -854,8 +862,7 @@ tr:hover {
     border-radius: 1rem;
     color: rgb(1, 83, 7);
     background: #d8d6d6;
-    gap: 1rem
-    ;
+    gap: 1rem;
     align-items: center;
     text-decoration: none;
     transition: ease-in-out 0.5s;
@@ -881,7 +888,7 @@ fieldset {
 
 form {
     font-weight: bold;
-    color: ;
+    /* color: ; */
     padding-block: 2.5rem;
     padding-inline: 4.5rem;
     margin: 0 auto;
@@ -898,7 +905,7 @@ form {
 }
 
 #application_form input[type="text"],
-#application_form input[type="email"], 
+#application_form input[type="email"],
 #application_form textarea,
 #application_form select {
     width: 100%;
@@ -984,7 +991,7 @@ form {
 }
 
 #btn-reset:hover {
-    background:rgb(255, 0, 0);
+    background: rgb(255, 0, 0);
     color: #fff;
     font-weight: 600;
 }
@@ -1001,8 +1008,8 @@ form {
 
 
 @media screen and (max-width: 700px) {
-    
-    
+
+
     .navbar-apply {
         flex-direction: column;
         text-align: center;
@@ -1027,6 +1034,7 @@ form {
     }
 
 }
+
 /*** 6. APPLY LAYOUT END***/
 
 /*** 7. JOBS LAYOUT ***/
@@ -1050,7 +1058,7 @@ form {
     border: 3px solid #669d1b;
     border-radius: 25px;
     height: auto;
-    width:auto;
+    width: auto;
 }
 
 .jobSumtxt {
@@ -1060,9 +1068,10 @@ form {
 }
 
 .jobGeneraltxt {
-    color: black 
+    color: black
 }
-.jobGeneraltxt h3 h4  {
+
+.jobGeneraltxt h3 h4 {
     text-align: left;
     padding-left: 20px;
 }
@@ -1087,53 +1096,46 @@ form {
 
 .job-grid-container {
     display: grid;
-    gap: 0px;
+    gap: 5px;
     grid-template-columns: auto auto auto;
     padding: 10px;
     overflow: hidden;
-
-    
 }
 
-.job-grid1
-{
+.job-grid1 {
     grid-row-start: 1;
     grid-row-end: 2;
 
 }
 
-.job-grid2
-{
+.job-grid2 {
     grid-row-start: 2;
-    grid-row-end: 2; 
+    grid-row-end: 2;
 }
 
-.job-grid3
-{
+.job-grid3 {
     grid-row-start: 1;
     grid-row-end: 2;
 
 }
 
-.job-grid4
-{
+.job-grid4 {
     grid-row-start: 4;
     grid-row-end: 4;
     grid-column-start: 1;
-    grid-column-end: 2; 
+    grid-column-end: 3;
 }
-.job-grid5
-{
+
+.job-grid5 {
     grid-row-start: 2;
-    grid-row-end: 2; 
+    grid-row-end: 2;
 
 }
-.job-grid6
-{
+
+.job-grid6 {
     grid-row-start: 5;
     grid-row-end: 5;
-    grid-column: 7; 
-    align-self: right;
+    grid-column-start: 2;
 }
-    
+
 /*** 7. JOBS LAYOUT END***/
