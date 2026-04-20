@@ -1086,12 +1086,17 @@ form {
     padding-left: 20px;
 }
 
+.jobGeneraltxt ol {
+    list-style-position: inside;
+}
+
 .jobGeneralbox {
     background-color: #ffff;
     border: 3px solid #669d1b;
     border-radius: 25px;
     width: fit-content;
     padding-bottom: 20px;
+    padding: 8px;
 }
 
 .job-grid-container {
