@@ -536,6 +536,31 @@ input {
     display: block;
 }
 
+@media screen and (max-width: 700px) { 
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.grid1 {
+    display: none;
+}
+
+.grid2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.grid4 {
+    display: none;
+}
+
+}
+
 #testimonialForm {
     display: grid;
     place-items: center;
@@ -1141,6 +1166,24 @@ form {
     grid-row-start: 5;
     grid-row-end: 5;
     grid-column-start: 2;
+}
+
+@media screen and (max-width: 700px) { 
+
+.job-grid-container {
+    display: grid;
+    gap: 10px;
+    grid-auto-flow: row;
+    padding: 10px;
+}
+
+.job-grid1, .job-grid2, .job-grid3, .job-grid4, .job-grid5, .job-grid6 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: auto;
+    grid-row: auto;
+}
+
 }
 
 /*** 7. JOBS LAYOUT END***/
